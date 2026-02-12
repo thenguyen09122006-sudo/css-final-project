@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <title>Gallery</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="script.js"></script>
 </head>
-<body>
+
+<body onload="addTabFocus()">
 
 <a href="#main" class="skip-link">Skip to Main Content</a>
 
@@ -20,14 +22,57 @@
 <main id="main">
   <h1>Image Gallery</h1>
 
+  <!-- Preview Box -->
+  <div id="image">
+    Hover over an image below or use Tab to display here.
+  </div>
+
   <section class="gallery">
-    <img src="images/flo1.jpg" alt="Image 1">
-    <img src="images/flo2.png" alt="Image 2">
-    <img src="images/flo3.jpg" alt="Image 3">
-    <img src="images/flo4.png" alt="Image 4">
-    <img src="images/flo5.jpg" alt="Image 5">
+    <img src="images/flo1.jpg" 
+         alt="Pink flower blooming in sunlight"
+         onmouseover="upDate(this)"
+         onmouseleave="undo()"
+         onfocus="upDate(this)"
+         onblur="undo()">
+
+    <img src="images/flo2.png" 
+         alt="Purple flower close-up view"
+         onmouseover="upDate(this)"
+         onmouseleave="undo()"
+         onfocus="upDate(this)"
+         onblur="undo()">
+
+    <img src="images/flo3.jpg" 
+         alt="Yellow flower in garden"
+         onmouseover="upDate(this)"
+         onmouseleave="undo()"
+         onfocus="upDate(this)"
+         onblur="undo()">
+
+    <img src="images/flo4.png" 
+         alt="Red flower with green leaves"
+         onmouseover="upDate(this)"
+         onmouseleave="undo()"
+         onfocus="upDate(this)"
+         onblur="undo()">
+
+    <img src="images/flo5.jpg" 
+         alt="White flower against blue sky"
+         onmouseover="upDate(this)"
+         onmouseleave="undo()"
+         onfocus="upDate(this)"
+         onblur="undo()">
+
+    <img src="images/flo6.jpg" 
+         alt="Orange flower in sunset light"
+         onmouseover="upDate(this)"
+         onmouseleave="undo()"
+         onfocus="upDate(this)"
+         onblur="undo()">
   </section>
+
 </main>
 
 </body>
 </html>
+
